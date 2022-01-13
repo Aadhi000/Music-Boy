@@ -1,8 +1,8 @@
 {
-  "name": "w2hmusicx",
+  "name": "SmokerMusicX",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Uw9nwiwhi2j8/MusicSanki",
+  "repository": "https://github.com/EsportMusicX/SmokerMusicX",
   "stack": "container",
   "env": {
     "SESSION_NAME": {

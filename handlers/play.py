@@ -98,7 +98,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("🔎 **𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 ❤️ ❰ 𝐞𝐒𝐩𝐨𝐫𝐭 🚬 ❱...**")
+    lel = await message.reply("🔎 **𝙵𝙸𝙽𝙳𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚂𝙾𝙽𝙶**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -148,12 +148,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**🚫 𝚅𝙸𝙳𝙴𝙾 𝙸𝚂 𝙻𝙾𝙽𝙶𝙴𝚁 𝚃𝙷𝙰𝙽 {DURATION_LIMIT} 𝙼𝙸𝙽𝚄𝚃𝙴𝚂(𝚂). 𝚂𝙴𝙽𝙳 𝚂𝙷𝙾𝚁𝚃𝙴𝚁 𝚅𝙾𝙳𝙴𝙾, 𝙲𝙰𝙽'𝚃 𝙿𝙻𝙰𝚈.𝙿𝚁𝙾𝚅𝙸𝙳𝙴𝙳 𝚅𝙸𝙳𝙴𝙾 𝙸𝚂 {duration} 𝙼𝙸𝙽𝚄𝚃𝙴𝚂(𝚂)**"
             )
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+        thumb_name = "https://telegra.ph/file/bff8d2c2ba43449adbc99.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"

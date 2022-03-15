@@ -52,7 +52,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '<b>𝚃𝙸𝚃𝙻𝙴 ››</b> <a href="{link}">{title}</a>\n\n<b>𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b> ››<a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA">𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a>'
+        rep = '<b>𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b> ›› <b>[𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉](https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA)</b>\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/OPMusicBoy_Bot)**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)

@@ -118,7 +118,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>𝐀𝐝 𝐌𝐞 😎 𝐀𝐬 𝐀𝐝𝐦𝐢𝐧 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 💫  𝐅𝐢𝐫𝐬𝐭 ❰ 𝐞𝐒𝐩𝐨𝐫𝐭 ❤️  𝐌𝐮𝐬𝐢𝐜'𝐗  🚬 ❱</b>")
+                        "<b>𝙰𝙳𝙳 𝙼𝙴 𝙰𝚂 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿../</b>")
                     return
 
                 try:
@@ -135,7 +135,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 🎸 𝐔𝐬𝐞𝐫𝐁𝐨𝐭 𝐈𝐬 𝐍𝐨𝐭 𝐈𝐧 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭' 𝐀𝐬𝐤 𝐀𝐝𝐦𝐢𝐧 😎 𝐓𝐨 𝐒𝐞𝐧𝐝 /𝐏𝐥𝐚𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 😎 𝐅𝐨𝐫 𝐅𝐢𝐫𝐬𝐭 𝐓𝐢𝐦𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐈𝐭 𝐀𝐧𝐲 𝐇𝐞𝐥𝐩 𝐃𝐦 :- ✨ [❛-𝐌𝐫'𝐒𝐦𝐎𝐤𝐞𝐫 🚬](https://t.me/Sanki_Owner) ❤️🥀 </i>")
+            f"<i>**𝙷𝙴𝚈 {user.first_name}, 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸𝚂 𝙽𝙾𝚃 𝙸𝙽 𝚃𝙷𝙸𝚂 𝙲𝙷𝙰𝚃' 𝙰𝚂𝙺 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝚂𝙴𝙽𝙳 /𝙿𝙻𝙰𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.**</i>")
         return
     
     audio = (
@@ -160,26 +160,17 @@ async def play(_, message: Message):
 
         keyboard = InlineKeyboardMarkup(
             [
-                [
+               [
                     InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
                             url=f"https://t.me/eSport_BOTs")
                ],
                [
                     InlineKeyboardButton(
-                            text="𝐒𝐦𝐨𝐊𝐞𝐫 🚬",
-                            url=f"https://t.me/Sanki_Owner"),
-                            
-                    InlineKeyboardButton(
-                            text="𝐅𝐞𝐞𝐋𝐢𝐧𝐠'𝐒 🥀",
-                            url=f"https://t.me/Smoker_Feelings")
-               ],
-               [
-                        InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
-                            url=f"https://t.me/EsportClan")
-                   
-                ]
+                            text="𝚄𝙿𝙳𝙰𝚃𝙴𝚂",
+                            url=f"https://t.me/Sanki_Owner")
+                                
+               ]
             ]
         )
 

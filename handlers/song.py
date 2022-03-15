@@ -61,7 +61,7 @@ def song(client, message):
     except Exception as e:
         m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
         print(e)
-*
+
     try:
         os.remove(audio_file)
         os.remove(thumb_name)

@@ -20,19 +20,19 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("/search needs an argument!")
+            await message.reply_text("**/search 𝙽𝙴𝙴𝙳𝚂 𝙰𝙽 𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃**")
             return
         query = message.text.split(None, 1)[1]
-        m = await message.reply_text("Searching....")
+        m = await message.reply_text("**ѕєαrchíng...!**")
         results = YoutubeSearch(query, max_results=4).to_dict()
         i = 0
         text = ""
         while i < 4:
-            text += f"Title - {results[i]['title']}\n"
-            text += f"Duration - {results[i]['duration']}\n"
-            text += f"Views - {results[i]['views']}\n"
-            text += f"Channel - {results[i]['channel']}\n"
-            text += f"https://youtube.com{results[i]['url_suffix']}\n\n"
+            text += f"**𝚃𝙸𝚃𝙻𝙴 - {results[i]['title']}\n\n**"
+            text += f"**𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 - {results[i]['duration']}\n**"
+            text += f"**𝚅𝙸𝙴𝚆𝚂 - {results[i]['views']}\n**"
+            text += f"**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 - {results[i]['channel']}\n**"
+            text += f"**𝙻𝙸𝙽𝙺 - https://youtube.com{results[i]['url_suffix']}\n\n**"
             i += 1
         await m.edit(text, disable_web_page_preview=True)
     except Exception as e:

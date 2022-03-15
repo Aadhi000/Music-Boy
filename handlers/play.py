@@ -153,7 +153,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/bff8d2c2ba43449adbc99.jpg"
+        thumb_name = "https://telegra.ph/file/932ae4696572ff9a5649a.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -220,7 +220,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/e666c674307fa851b3f95.jpg"
+            thumb_name = "https://telegra.ph/file/932ae4696572ff9a5649a.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -331,7 +331,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**ᗩᒍᗩ᙭ 𝙿𝙻𝙰𝚈𝙸𝙽𝙶 `{}`...**".format(
+            caption="**𝙰𝙹𝙰𝚇 𝙿𝙻𝙰𝚈𝙸𝙽𝙶 `{}`...**".format(
         message.chat.title
         ), )
 

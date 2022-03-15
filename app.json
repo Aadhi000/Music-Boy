@@ -1,12 +1,13 @@
 {
-  "name": "SmokerMusicX",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "name": "OP-Music Boy",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by OpusTechz.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/EsportMusicX/SmokerMusicX",
+  "logo": "https://telegra.ph/file/28159f7bf8c768ebc635d.jpg",
+  "repository": "https://github.com/Aadhi000/Music-Boy",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "Pyrogram string session",
       "required": true
     },
     "BOT_TOKEN": {

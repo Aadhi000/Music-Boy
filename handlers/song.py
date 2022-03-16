@@ -73,6 +73,27 @@ def a(client, message):
     except Exception as e:
         m.edit('**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**')
         print(e)
+
+# Funtion To Download Song
+async def download_song(url):
+    song_name = f"{randint(6969, 6999)}.mp3"
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as resp:
+            if resp.status == 200:
+                f = await aiofiles.open(song_name, mode="wb")
+                await f.write(await resp.read())
+                await f.close()
+    return song_name
+
+
+is_downloading = False
+
+
+def time_to_seconds(time):
+    stringt = str(time)
+    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
+
+
     try:
         os.remove(audio_file)
         os.remove(thumb_name)

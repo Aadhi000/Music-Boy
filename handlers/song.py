@@ -1,16 +1,10 @@
-from __future__ import unicode_literals
-
-import asyncio
-import math
 import os
-import time
-
-import aiofiles
-import aiohttp
-from pyrogram import Client, filters
-from pyrogram.errors import FloodWait, MessageNotModified
-from pyrogram.types import Message
 import requests
+import aiohttp
+import yt_dlp
+
+from pyrogram import filters, Client
+from youtube_search import YoutubeSearch
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -41,10 +35,10 @@ def song(client, message):
         open(thumb_name, 'wb').write(thumb.content)
 
 
-        performer = f"[ᗩᒍᗩ᙭]" 
-        duration = results[0]["duration"]
-        url_suffix = results[0]["url_suffix"]
-        views = results[0]["views"]
+               performer = f"[ᗩᒍᗩ᙭]" 
+               duration = results[0]["duration"]
+               url_suffix = results[0]["url_suffix"]
+               views = results[0]["views"]
 
     except Exception as e:
         m.edit(

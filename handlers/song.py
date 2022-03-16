@@ -43,12 +43,11 @@ def song(client, message):
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
-
-
-              
-               duration = results[0]["duration"]
-               url_suffix = results[0]["url_suffix"]
-               views = results[0]["views"]
+             
+        performer = f"[ᗩᒍᗩ᙭]" 
+        duration = results[0]["duration"]
+        url_suffix = results[0]["url_suffix"]
+        views = results[0]["views"]
 
     except Exception as e:
         m.edit(

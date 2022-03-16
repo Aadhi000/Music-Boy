@@ -7,7 +7,6 @@ import time
 
 import aiofiles
 import aiohttp
-import wget
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message

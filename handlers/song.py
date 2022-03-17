@@ -8,7 +8,6 @@ import asyncio
 import math
 import time
 
-import wget
 import aiofiles
 
 from pyrogram import filters, Client

@@ -35,6 +35,14 @@
       "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
       "value": "10"
+    },
+    "AUTH": {
+    "ENABLE": false,
+    "PASSWORD": "",
+    "USERS": []
+    },
+    "SPOTDL_DOWNLOADER": true,
+    "SPOTIFYDL_DOWNLOADER": false
     }
   }
 }

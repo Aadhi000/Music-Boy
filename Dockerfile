@@ -9,11 +9,3 @@ COPY . /kaal/
 WORKDIR /kaal/
 RUN pip3 install -U -r requirements.txt
 CMD python3 main.py
-WORKDIR /app
-COPY config.json /app/config.json
-COPY main.py /app/main.py
-COPY requirements.txt /app/requirements.txt
-
-RUN pip install -r requirements.txt
-
-CMD ["python", "./main.py"]

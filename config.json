@@ -1,0 +1,9 @@
+{
+  "AUTH": {
+    "ENABLE": false,
+    "PASSWORD": "",
+    "USERS": []
+  },
+  "SPOTDL_DOWNLOADER": true,
+  "SPOTIFYDL_DOWNLOADER": false
+}

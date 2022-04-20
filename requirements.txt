@@ -62,3 +62,5 @@ ffmpeg-python
 ffmpeg
 Pillow
 ujson
+spotdl
+python-dotenv

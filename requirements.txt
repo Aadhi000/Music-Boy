@@ -62,5 +62,6 @@ ffmpeg-python
 ffmpeg
 Pillow
 ujson
+python-telegram-bot==12.3.0
 spotdl
 python-dotenv

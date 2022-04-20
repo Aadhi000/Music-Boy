@@ -12,7 +12,6 @@ CMD python3 main.py
 WORKDIR /app
 COPY config.json /app/config.json
 COPY main.py /app/main.py
-COPY .env /app/.env
 COPY requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt

@@ -16,6 +16,4 @@ COPY requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt
 
-RUN snap install -y ffmpeg
-
 CMD ["python", "./main.py"]

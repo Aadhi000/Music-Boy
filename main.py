@@ -4,6 +4,25 @@ import json
 import logging
 import os
 from dotenv import dotenv_values
+import requests
+from pyrogram import idle
+from pyrogram import Client as Bot
+
+from callsmusic import run
+from config import API_ID, API_HASH, BOT_TOKEN
+
+
+bot = Bot(
+    ":memory:",
+    API_ID,
+    API_HASH,
+    bot_token=BOT_TOKEN,
+    plugins=dict(root="handlers")
+)
+
+bot.start()
+run()
+idle()
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)

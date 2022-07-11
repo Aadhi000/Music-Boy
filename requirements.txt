@@ -1,5 +1,5 @@
 git+https://github.com/adityacheats/downloader@master
-pyrogram
+git+https://github.com/subinps/pyrogram@inline-m
 TgCrypto
 py-tgcalls
 python-dotenv
